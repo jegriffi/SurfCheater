@@ -14,6 +14,10 @@ public class Constants {
 
         // VENTURA
         public static final String VENTURA = "2952";
+
+        public String[] getAll() {
+            return new String[] {NORTH_LA, SOUTH_LA, NORTH_OC, SOUTH_OC, VENTURA};
+        }
     }
 
     public static class LiveLocationCode {
@@ -24,6 +28,11 @@ public class Constants {
         public static final String SEVENTEENTH_ST = "4871";
         public static final String BOLSA_CHICA_OVERVIEW = "103685";
         public static final String BOLSA_CHICA_STATE_PARK = "4868";
+
+        public String[] getAll() {
+            return new String[] {HB_NORTHSIDE, HB_SOUTHSIDE, SEAL_BEACH, SEVENTEENTH_ST,
+                BOLSA_CHICA_OVERVIEW, BOLSA_CHICA_STATE_PARK};
+        }
     }
 
     // URL code for json files
