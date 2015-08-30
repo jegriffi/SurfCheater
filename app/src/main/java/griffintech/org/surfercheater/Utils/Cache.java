@@ -7,7 +7,8 @@ import java.util.HashMap;
  */
 public final class Cache {
 
-    private static HashMap<String, CacheValue> cacheMap;
+    private static HashMap<String, Object> forecastCacheMap;
+    private static HashMap<String, Object> currentCacheMap;
     private static Cache mInstance = null;
 
     public static synchronized Cache instance() {
@@ -15,12 +16,32 @@ public final class Cache {
             return mInstance;
         }
         mInstance = new Cache();
+        forecastCacheMap = new HashMap<String, Object>();
+        currentCacheMap = new HashMap<String, Object>();
         return mInstance;
     }
 
-    // each area information will be put into the cache value;
-    private static class CacheValue {
+    public synchronized void putForecast(final String key, final Object value) {
+        forecastCacheMap.put(key, value);
+    }
 
+    public synchronized Object getForecast(final String key) {
+        return forecastCacheMap.get(key);
+    }
 
+    public synchronized void removeForecast(final String key) {
+        forecastCacheMap.remove(key);
+    }
+
+    public synchronized void putCurrent(final String key, final Object value) {
+        currentCacheMap.put(key, value);
+    }
+
+    public synchronized Object getCurrent(final String key) {
+        return currentCacheMap.get(key);
+    }
+
+    public synchronized void removeCurrent(final String key) {
+        currentCacheMap.remove(key);
     }
 }

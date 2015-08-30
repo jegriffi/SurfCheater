@@ -15,7 +15,7 @@ public class Constants {
         // VENTURA
         public static final String VENTURA = "2952";
 
-        public String[] getAll() {
+        public static String[] getAll() {
             return new String[] {NORTH_LA, SOUTH_LA, NORTH_OC, SOUTH_OC, VENTURA};
         }
     }
