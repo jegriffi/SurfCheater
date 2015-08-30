@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- surf height grading colors -->
+    <color name="surf_grade_poor">#D3DBDE</color>
+    <color name="surf_grade_poor_to_fair">#168FF2</color>
+    <color name="surf_grade_fair_to_good">#3BE625</color>
+
+
+</resources>

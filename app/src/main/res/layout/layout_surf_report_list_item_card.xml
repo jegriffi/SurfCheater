@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/current_surf_view_width"
+    android:layout_height="@dimen/current_surf_view_height"
+    android:background="@color/surf_grade_poor">
+
+    <TextView
+        android:id="@+id/surf_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/current_surf_height_view_margin_vertical"
+        android:text="@string/current_surf_title"/>
+
+    <TextView
+        android:id="@+id/current_surf_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:textSize="25sp"
+        android:layout_below="@+id/surf_card_title"
+        android:layout_marginTop="@dimen/current_surf_height_view_margin_vertical"
+        android:text="@string/placeholder"/>
+
+    <TextView
+        android:id="@+id/current_surf_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/current_surf_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/current_surf_rating_view_margin_vertical"
+        android:text="@string/placeholder"/>
+</RelativeLayout>
