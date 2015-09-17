@@ -6,5 +6,9 @@
     <color name="surf_grade_poor_to_fair">#168FF2</color>
     <color name="surf_grade_fair_to_good">#3BE625</color>
 
+    <!-- background colors -->
+    <color name="very_light_grey_background">#E8ECED</color>
+    <color name="white">#FFFFFF</color>
+
 
 </resources>

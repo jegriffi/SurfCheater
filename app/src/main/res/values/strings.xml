@@ -4,4 +4,8 @@
     <string name="placeholder">XXX</string>
     <string name="current_surf_title">Current Surf Height</string>
     <string name="action_settings">Settings</string>
+
+
+    <!-- favorite spot dashboard card -->
+    <string name="favorite_spot_location_title">Favorite Spot:</string>
 </resources>
