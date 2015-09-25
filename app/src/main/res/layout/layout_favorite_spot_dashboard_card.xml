@@ -11,35 +11,105 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
+        android:paddingTop="@dimen/textview_padding_vertical_normal"
         android:text="@string/placeholder"
-        android:textSize="25sp"/>
+        android:textSize="@dimen/textview_font_size_large"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="@dimen/textview_padding_vertical_normal"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal"
+        android:paddingEnd="@dimen/textview_padding_horizontal_normal"
+        android:paddingStart="@dimen/textview_padding_horizontal_normal">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/favorite_spot_location_title"
             android:gravity="start"
-            android:textSize="18sp"/>
+            android:text="@string/favorite_spot_location_title"
+            android:textSize="@dimen/textview_font_size_normal"/>
 
         <TextView
-            android:id="@+id/favorite_spot_location"
+            android:id="@+id/tv_favorite_spot_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/placeholder"
-            android:textSize="18sp"/>
+            android:textSize="@dimen/textview_font_size_normal"/>
     </RelativeLayout>
 
-    <RelativeLayout android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/textview_padding_horizontal_normal"
+        android:paddingStart="@dimen/textview_padding_horizontal_normal"
+        android:paddingTop="@dimen/textview_padding_vertical_normal"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/favorite_spot_surf_height_title"
+            android:textSize="@dimen/textview_font_size_normal"/>
 
+        <TextView
+            android:id="@+id/tv_favorite_spot_surf_height"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/placeholder"
+            android:textSize="@dimen/textview_font_size_normal"/>
     </RelativeLayout>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/textview_padding_horizontal_normal"
+        android:paddingStart="@dimen/textview_padding_horizontal_normal"
+        android:paddingTop="@dimen/textview_padding_vertical_normal"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal">
 
-</LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/favorite_spot_high_tide_title"
+            android:textSize="@dimen/textview_font_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_favorite_spot_high_tide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/placeholder"
+            android:textSize="@dimen/textview_font_size_normal"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/textview_padding_horizontal_normal"
+        android:paddingStart="@dimen/textview_padding_horizontal_normal"
+        android:paddingTop="@dimen/textview_padding_vertical_normal"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/favorite_spot_low_tide_title"
+            android:textSize="@dimen/textview_font_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_favorite_spot_low_tide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/placeholder"
+            android:textSize="@dimen/textview_font_size_normal"/>
+    </RelativeLayout>
+
+    </LinearLayout>

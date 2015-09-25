@@ -3,6 +3,16 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <!-- margin and padding -->
+    <dimen name="cardview_margin_horizontal_normal">12dp</dimen>
+    <dimen name="carview_margin_vertical_normal">12dp</dimen>
+
+    <dimen name="textview_padding_horizontal_normal">5dp</dimen>
+    <dimen name="textview_padding_vertical_normal">5dp</dimen>
+
+    <!-- text sizes -->
+    <dimen name="textview_font_size_normal">18sp</dimen>
+    <dimen name="textview_font_size_large">25sp</dimen>
 
     <!-- dimens for current surf report view -->
     <dimen name="current_surf_height_title_view_margin_vertical">12dp</dimen>

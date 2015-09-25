@@ -8,4 +8,7 @@
 
     <!-- favorite spot dashboard card -->
     <string name="favorite_spot_location_title">Favorite Spot:</string>
+    <string name="favorite_spot_surf_height_title">Current Surf Height:</string>
+    <string name="favorite_spot_high_tide_title">High Tide</string>
+    <string name="favorite_spot_low_tide_title">Low Tide</string>
 </resources>
