@@ -7,10 +7,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import griffintech.org.surfercheater.R;
+
 /**
  * Created by James on 9/17/2015.
  */
 public class DashboardFragment extends Fragment {
+
+    @Bind()
 
 
     @Override
@@ -23,9 +29,9 @@ public class DashboardFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         super.onCreateView(inflater, container, savedInstanceState);
 
-        ViewGroup rootView = null;
-//        ViewGroup rootView = (ViewGroup) inflater.inflate(R.id.fragment_dashboard, container, false);
-//        ButterKnife.bind(this, rootView);
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_dashboard, container, false);
+       ButterKnife.bind(this, rootView);
         return rootView;
     }
+
 }

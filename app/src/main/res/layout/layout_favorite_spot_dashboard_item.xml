@@ -6,15 +6,6 @@
     android:background="@color/white"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_favorite_spot_title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:paddingTop="@dimen/textview_padding_vertical_normal"
-        android:text="@string/placeholder"
-        android:textSize="@dimen/textview_font_size_large"/>
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +20,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="@string/favorite_spot_location_title"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
 
         <TextView
             android:id="@+id/tv_favorite_spot_location"
@@ -37,7 +28,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/placeholder"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -53,7 +44,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="@string/favorite_spot_surf_height_title"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
 
         <TextView
             android:id="@+id/tv_favorite_spot_surf_height"
@@ -61,7 +52,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/placeholder"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
     </RelativeLayout>
 
     <RelativeLayout
@@ -77,7 +68,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="@string/favorite_spot_high_tide_title"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
 
         <TextView
             android:id="@+id/tv_favorite_spot_high_tide"
@@ -85,7 +76,7 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/placeholder"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
         </RelativeLayout>
 
     <RelativeLayout
@@ -101,7 +92,7 @@
             android:layout_height="wrap_content"
             android:gravity="start"
             android:text="@string/favorite_spot_low_tide_title"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
 
         <TextView
             android:id="@+id/tv_favorite_spot_low_tide"
@@ -109,7 +100,31 @@
             android:layout_height="wrap_content"
             android:gravity="end"
             android:text="@string/placeholder"
-            android:textSize="@dimen/textview_font_size_normal"/>
+            android:textSize="@dimen/textview_font_size_small"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="@dimen/textview_padding_horizontal_normal"
+        android:paddingStart="@dimen/textview_padding_horizontal_normal"
+        android:paddingTop="@dimen/textview_padding_vertical_normal"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/favorite_spot_wind_info_title"
+            android:textSize="@dimen/textview_font_size_small"/>
+
+        <TextView
+            android:id="@+id/tv_favorite_spot_wind_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:text="@string/placeholder"
+            android:textSize="@dimen/textview_font_size_small"/>
     </RelativeLayout>
 
     </LinearLayout>
