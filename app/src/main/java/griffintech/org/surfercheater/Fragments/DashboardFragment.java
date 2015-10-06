@@ -8,10 +8,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.util.List;
+
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import griffintech.org.surfercheater.R;
 import griffintech.org.surfercheater.Utils.Cache;
+import griffintech.org.surfercheater.Utils.CurrentSurfInfo;
+import griffintech.org.surfercheater.Utils.ForecastSurfInfo;
 
 /**
  * Created by James on 9/17/2015.
@@ -24,21 +28,17 @@ public class DashboardFragment extends Fragment {
     @Bind(R.id.tv_favorite_spot_low_tide) TextView mTvFavLowTide;
     @Bind(R.id.tv_favorite_spot_wind_info) TextView mTvFavWindInfo;
 
-
     private Cache mCache;
-    private String favLocation;
-    private String favSurfHeight;
-    private String favHighTide;
-    private String favLowTide;
-    private String favWindInfo;
-
+    private CurrentSurfInfo mCurrentSurfInfo;
+    private ForecastSurfInfo mForecastSurfInfo;
+    private List<ForecastSurfInfo> mForecastSurfInfos;
 
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mCache = Cache.instance();
+//        mCurrentSurfInfo = mCache.getCurrent();
+//        mForecastSurfInfo = mCache.getForecast();
     }
-
-
 
     @Nullable
     @Override
@@ -46,8 +46,31 @@ public class DashboardFragment extends Fragment {
         super.onCreateView(inflater, container, savedInstanceState);
 
         ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_dashboard, container, false);
-       ButterKnife.bind(this, rootView);
+        ButterKnife.bind(this, rootView);
         return rootView;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        initializeWidgets();
+    }
+
+    private void initializeWidgets() {
+        /*fav spot */
+        mTvFavLocation.setText(mCurrentSurfInfo.getLocation());
+        //mTvFavSurfHeight.setText(FormattingUtils.surfHeight(mCurrentSurfInfo.getHeightMin()
+        // , mCurrentSurfInfo.getHeightMax()));
+        mTvFavHighTide.setText(mCurrentSurfInfo.getHighTide());
+        mTvFavLowTide.setText(mCurrentSurfInfo.getLowTide());
+        //mTvFavWindInfo.setText(FormattingUtils.windInfo(mCurrentSurfInfo.getWindSpeed(), mCurrentSurfInfo.getWindDirection()));
+
+        /* fav spot forecast */
+        setupFavForecast();
+    }
+
+    private void setupFavForecast() {
+
     }
 
 }
