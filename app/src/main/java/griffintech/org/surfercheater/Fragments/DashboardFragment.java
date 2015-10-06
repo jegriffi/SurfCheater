@@ -6,23 +6,39 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import griffintech.org.surfercheater.R;
+import griffintech.org.surfercheater.Utils.Cache;
 
 /**
  * Created by James on 9/17/2015.
  */
 public class DashboardFragment extends Fragment {
 
-    @Bind()
+    @Bind(R.id.tv_favorite_spot_location) TextView mTvFavLocation;
+    @Bind(R.id.tv_favorite_spot_surf_height) TextView mTvFavSurfHeight;
+    @Bind(R.id.tv_favorite_spot_high_tide) TextView mTvFavHighTide;
+    @Bind(R.id.tv_favorite_spot_low_tide) TextView mTvFavLowTide;
+    @Bind(R.id.tv_favorite_spot_wind_info) TextView mTvFavWindInfo;
 
 
-    @Override
+    private Cache mCache;
+    private String favLocation;
+    private String favSurfHeight;
+    private String favHighTide;
+    private String favLowTide;
+    private String favWindInfo;
+
+
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        mCache = Cache.instance();
     }
+
+
 
     @Nullable
     @Override

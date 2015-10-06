@@ -21,7 +21,7 @@ public final class Cache {
         return mInstance;
     }
 
-    public synchronized void putForecast(final String key, final Object value) {
+    public synchronized void putForecast(final String key, final ForecastSurfInfo value) {
         forecastCacheMap.put(key, value);
     }
 
@@ -33,7 +33,7 @@ public final class Cache {
         forecastCacheMap.remove(key);
     }
 
-    public synchronized void putCurrent(final String key, final Object value) {
+    public synchronized void putCurrent(final String key, final CurrentSurfInfo value) {
         currentCacheMap.put(key, value);
     }
 
