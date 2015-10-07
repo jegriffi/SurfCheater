@@ -17,4 +17,7 @@
     <!-- forecasted spots -->
     <string name="forecast_spot_card_title">Forecasts</string>
 
+    <string name="dashboard_nearby_spots">Nearby Forecasts</string>
+    <string name="dashboard_all_spots">All Spots</string>
+
 </resources>

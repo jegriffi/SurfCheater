@@ -4,53 +4,68 @@ package griffintech.org.surfercheater.Utils;
  * Created by James on 10/5/2015.
  */
 public class ForecastSurfInfo implements SurfInfo {
-    @Override
-    public void setHeightMax(String s) {
+    private String heightMin;
+    private String heightMax;
+    private String location;
+    private String highTide;
+    private String lowTide;
+    private String date;
 
+    @Override
+    public void setHeightMax(String heightMax) {
+        this.heightMax = heightMax;
     }
 
     @Override
-    public void setHeightMin(String s) {
-
+    public void setHeightMin(String heightMin) {
+        this.heightMin = heightMin;
     }
 
     @Override
-    public void setLocation(String s) {
-
+    public void setLocation(String location) {
+        this.location = location;
     }
 
     @Override
-    public void setHighTide(String s) {
-
+    public void setHighTide(String highTide) {
+        this.highTide = highTide;
     }
 
     @Override
-    public void setLowTide(String s) {
+    public void setLowTide(String lowTide) {
+        this.lowTide = lowTide;
+    }
 
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getDate() {
+        return null;
     }
 
     @Override
     public String getLocation() {
-        return null;
+        return this.location;
     }
 
     @Override
     public String getHeightMax() {
-        return null;
+        return this.heightMax;
     }
 
     @Override
     public String getHeightMin() {
-        return null;
+        return this.heightMin;
     }
 
     @Override
     public String getLowTide() {
-        return null;
+        return this.lowTide;
     }
 
     @Override
     public String getHighTide() {
-        return null;
+        return this.highTide;
     }
 }

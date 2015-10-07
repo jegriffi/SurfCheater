@@ -1,11 +1,15 @@
 package griffintech.org.surfercheater.Fragments;
 
+import android.content.Context;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -16,6 +20,7 @@ import griffintech.org.surfercheater.R;
 import griffintech.org.surfercheater.Utils.Cache;
 import griffintech.org.surfercheater.Utils.CurrentSurfInfo;
 import griffintech.org.surfercheater.Utils.ForecastSurfInfo;
+import griffintech.org.surfercheater.Utils.FormattingUtils;
 
 /**
  * Created by James on 9/17/2015.
@@ -27,6 +32,7 @@ public class DashboardFragment extends Fragment {
     @Bind(R.id.tv_favorite_spot_high_tide) TextView mTvFavHighTide;
     @Bind(R.id.tv_favorite_spot_low_tide) TextView mTvFavLowTide;
     @Bind(R.id.tv_favorite_spot_wind_info) TextView mTvFavWindInfo;
+    @Bind(R.id.hsv_container) RelativeLayout hsvContainer;
 
     private Cache mCache;
     private CurrentSurfInfo mCurrentSurfInfo;
@@ -70,7 +76,38 @@ public class DashboardFragment extends Fragment {
     }
 
     private void setupFavForecast() {
+        for (ForecastSurfInfo forecast : mForecastSurfInfos) {
+            ForecastItem itemView = new ForecastItem(getContext(), forecast.getDate(),
+                    forecast.getHeightMin(), forecast.getHeightMax());
+            hsvContainer.addView(itemView);
+        }
+    }
 
+    private class ForecastItem extends LinearLayout {
+
+        public ForecastItem(Context context) {
+            super(context);
+        }
+
+        public ForecastItem(Context context, String date, String heightMin, String heightMax) {
+            super(context);
+
+            setOrientation(LinearLayout.VERTICAL);
+            setLayoutParams(new LayoutParams(getResources().getDimensionPixelOffset(R.dimen.dashboard_forecast_item_width)
+                    , LayoutParams.MATCH_PARENT));
+            setBackgroundColor(Color.GRAY);
+            TextView tvDate = new TextView(context);
+            //TODO: format date to today, tomorrow, and month/day after
+            tvDate.setText(date);
+            tvDate.setTextSize(14);
+
+            TextView tvForecastHeight = new TextView(context);
+            tvForecastHeight.setText(FormattingUtils.surfHeight(heightMin, heightMax));
+            tvForecastHeight.setTextSize(12);
+
+            addView(tvDate);
+            addView(tvForecastHeight);
+        }
     }
 
 }

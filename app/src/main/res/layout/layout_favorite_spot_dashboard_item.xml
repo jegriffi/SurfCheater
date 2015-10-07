@@ -10,10 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:paddingTop="@dimen/textview_padding_vertical_normal"
         android:paddingBottom="@dimen/textview_padding_vertical_normal"
         android:paddingEnd="@dimen/textview_padding_horizontal_normal"
-        android:paddingStart="@dimen/textview_padding_horizontal_normal">
+        android:paddingStart="@dimen/textview_padding_horizontal_normal"
+        android:paddingTop="@dimen/textview_padding_vertical_normal">
 
         <TextView
             android:layout_width="match_parent"
@@ -34,10 +34,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal"
         android:paddingEnd="@dimen/textview_padding_horizontal_normal"
         android:paddingStart="@dimen/textview_padding_horizontal_normal"
-        android:paddingTop="@dimen/textview_padding_vertical_normal"
-        android:paddingBottom="@dimen/textview_padding_vertical_normal">
+        android:paddingTop="@dimen/textview_padding_vertical_normal">
 
         <TextView
             android:layout_width="match_parent"
@@ -58,10 +58,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal"
         android:paddingEnd="@dimen/textview_padding_horizontal_normal"
         android:paddingStart="@dimen/textview_padding_horizontal_normal"
-        android:paddingTop="@dimen/textview_padding_vertical_normal"
-        android:paddingBottom="@dimen/textview_padding_vertical_normal">
+        android:paddingTop="@dimen/textview_padding_vertical_normal">
 
         <TextView
             android:layout_width="match_parent"
@@ -77,15 +77,15 @@
             android:gravity="end"
             android:text="@string/placeholder"
             android:textSize="@dimen/textview_font_size_small"/>
-        </RelativeLayout>
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/textview_padding_vertical_normal"
         android:paddingEnd="@dimen/textview_padding_horizontal_normal"
         android:paddingStart="@dimen/textview_padding_horizontal_normal"
-        android:paddingTop="@dimen/textview_padding_vertical_normal"
-        android:paddingBottom="@dimen/textview_padding_vertical_normal">
+        android:paddingTop="@dimen/textview_padding_vertical_normal">
 
         <TextView
             android:layout_width="match_parent"
@@ -106,10 +106,10 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/textview_padding_vertical_large"
         android:paddingEnd="@dimen/textview_padding_horizontal_normal"
         android:paddingStart="@dimen/textview_padding_horizontal_normal"
-        android:paddingTop="@dimen/textview_padding_vertical_normal"
-        android:paddingBottom="@dimen/textview_padding_vertical_normal">
+        android:paddingTop="@dimen/textview_padding_vertical_normal">
 
         <TextView
             android:layout_width="match_parent"
@@ -127,4 +127,4 @@
             android:textSize="@dimen/textview_font_size_small"/>
     </RelativeLayout>
 
-    </LinearLayout>
+</LinearLayout>

@@ -31,7 +31,10 @@
     <dimen name="current_surf_view_width">125dp</dimen>
     <dimen name="current_surf_view_height">100dp</dimen>
 
-    <dimen name="dashboard_small_card_width">150dp</dimen>
+    <dimen name="dashboard_small_card_width">165dp</dimen>
     <dimen name="dashboard_small_card_height">110dp</dimen>
+
+    <!-- forecast dashboard item -->
+    <dimen name="dashboard_forecast_item_width">75dp</dimen>
 
 </resources>
