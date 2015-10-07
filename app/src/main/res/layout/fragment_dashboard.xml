@@ -111,6 +111,7 @@
             android:layout_marginEnd="@dimen/cardview_margin_horizontal_normal"
             android:layout_marginStart="@dimen/cardview_margin_horizontal_normal"
             android:layout_marginTop="@dimen/cardview_margin_vertical_small"
+            android:clickable="true"
             card_view:cardCornerRadius="8dp">
 
             <LinearLayout
@@ -152,6 +153,7 @@
             android:layout_marginEnd="@dimen/cardview_margin_horizontal_normal"
             android:layout_marginStart="@dimen/cardview_margin_horizontal_normal"
             android:layout_marginTop="@dimen/cardview_margin_vertical_small"
+            android:clickable="true"
             card_view:cardCornerRadius="8dp">
 
             <LinearLayout

@@ -16,6 +16,7 @@ import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import griffintech.org.surfercheater.R;
 import griffintech.org.surfercheater.Utils.Cache;
 import griffintech.org.surfercheater.Utils.CurrentSurfInfo;
@@ -83,11 +84,17 @@ public class DashboardFragment extends Fragment {
         }
     }
 
-    private class ForecastItem extends LinearLayout {
+    @OnClick(R.id.dashboard_nearby_forecast_card)
+    public void nearbyClick() {
+        //TODO: fragment transaction to nearby forecast
+    }
 
-        public ForecastItem(Context context) {
-            super(context);
-        }
+    @OnClick(R.id.dashboard_all_spots_card)
+    public void allSpotsClick() {
+        //TODO: fragment transaction to nearby forecast
+    }
+
+    private class ForecastItem extends LinearLayout {
 
         public ForecastItem(Context context, String date, String heightMin, String heightMax) {
             super(context);

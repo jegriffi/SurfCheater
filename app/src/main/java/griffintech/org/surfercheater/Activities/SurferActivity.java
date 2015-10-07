@@ -12,7 +12,7 @@ public class SurferActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surfer);
+        setContentView(R.layout.activity_surfer); //TODO: needs to be splashpage
     }
 
     @Override
