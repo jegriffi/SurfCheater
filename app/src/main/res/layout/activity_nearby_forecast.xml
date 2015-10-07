@@ -15,4 +15,9 @@
         android:textSize="@dimen/textview_font_size_large"
         android:gravity="center"/>
 
+    <com.airbnb.android.airmapview.AirMapView
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
 </LinearLayout>
