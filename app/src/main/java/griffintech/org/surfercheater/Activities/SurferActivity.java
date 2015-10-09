@@ -1,18 +1,26 @@
 package griffintech.org.surfercheater.Activities;
 
+import android.app.ActionBar;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import griffintech.org.surfercheater.Fragments.DashboardFragment;
 import griffintech.org.surfercheater.R;
 
-public class SurferActivity extends AppCompatActivity {
+public class SurferActivity extends ActionBarActivity {
+
+    //Fragment splashFrag = new SplashFragment();
+    Fragment dashboardFrag = new DashboardFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_surfer); //TODO: needs to be splashpage
+
     }
 
     @Override
@@ -29,7 +37,6 @@ public class SurferActivity extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }

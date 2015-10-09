@@ -20,7 +20,7 @@
         android:paddingEnd="@dimen/textview_padding_horizontal_large"
         android:paddingStart="@dimen/textview_padding_horizontal_large"
         android:paddingTop="@dimen/textview_padding_vertical_large"
-        card_view:cardCornerRadius="8dp">
+        card_view:cardCornerRadius="4dp">
 
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -42,12 +42,12 @@
                 android:background="@android:color/darker_gray"/>
 
             <RelativeLayout android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="wrap_content">
 
-
+                <include layout="@layout/layout_favorite_spot_dashboard_item"/>
             </RelativeLayout>
 
-            <include layout="@layout/layout_favorite_spot_dashboard_item"/>
+
 
 
         </LinearLayout>
@@ -62,7 +62,7 @@
         android:layout_marginEnd="@dimen/cardview_margin_horizontal_normal"
         android:layout_marginStart="@dimen/cardview_margin_horizontal_normal"
         android:layout_marginTop="@dimen/cardview_margin_vertical_small"
-        card_view:cardCornerRadius="8dp">
+        card_view:cardCornerRadius="4dp">
 
         <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -112,7 +112,7 @@
             android:layout_marginStart="@dimen/cardview_margin_horizontal_normal"
             android:layout_marginTop="@dimen/cardview_margin_vertical_small"
             android:clickable="true"
-            card_view:cardCornerRadius="8dp">
+            card_view:cardCornerRadius="4dp">
 
             <LinearLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -154,7 +154,7 @@
             android:layout_marginStart="@dimen/cardview_margin_horizontal_normal"
             android:layout_marginTop="@dimen/cardview_margin_vertical_small"
             android:clickable="true"
-            card_view:cardCornerRadius="8dp">
+            card_view:cardCornerRadius="4dp">
 
             <LinearLayout
                 xmlns:android="http://schemas.android.com/apk/res/android"
@@ -182,8 +182,6 @@
                     android:src="@drawable/ic_map_black_36dp"/>
 
             </LinearLayout>
-
-
         </android.support.v7.widget.CardView>
     </RelativeLayout>
 </LinearLayout>

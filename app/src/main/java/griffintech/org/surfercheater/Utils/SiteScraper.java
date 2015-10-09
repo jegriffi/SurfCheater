@@ -81,7 +81,8 @@ public class SiteScraper extends AsyncTask<String, Void, String>  {
 
             SurfSpotForecast surfSpotForecast = new SurfSpotForecast(generalCondition, surfMax, surfMin, surfText, region);
 
-            mCache.putForecast(region, surfSpotForecast);
+            //TODO: fix mCache
+            //mCache.putForecast(region, surfSpotForecast);
         }catch (org.json.JSONException e) {
             e.printStackTrace();
         }
