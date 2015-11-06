@@ -1,16 +1,18 @@
 package griffintech.org.surfercheater.Activities;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.FrameLayout;
+import android.view.ViewGroup.LayoutParams;
 
 import griffintech.org.surfercheater.Fragments.DashboardFragment;
 import griffintech.org.surfercheater.R;
 
 public class SurferActivity extends ActionBarActivity {
-
     //Fragment splashFrag = new SplashFragment();
     Fragment dashboardFrag = new DashboardFragment();
 
@@ -18,6 +20,22 @@ public class SurferActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_surfer); //TODO: needs to be splashpage
+        FrameLayout frame = new FrameLayout(this);
+
+        /*
+        //TODO: Create splashPage Fragment && add Eventbus to Manifest file
+        //      incorporate into the Splashfragment then subscribe to when
+        //      the splash pages finishes; upon finish, do a fragment transaction
+        //      to the new fragment(DashboardFragment)
+        //frame.setId();
+        setContentView(frame, new LayoutParams(LayoutParams.MATCH_PARENT,
+                LayoutParams.MATCH_PARENT));
+        if (savedInstanceState == null) {
+            Fragment splashFrag = new Fragment();
+            FragmentTransaction ft = getFragmentManager().beginTransaction();
+            ft.add(android.R.id.content, splashFrag).commit();
+        }
+        */
 
     }
 
