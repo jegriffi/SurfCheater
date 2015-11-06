@@ -2,7 +2,7 @@ package griffintech.org.surfercheater.Activities;
 
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,7 +22,7 @@ public class SurferActivity extends ActionBarActivity {
         setContentView(R.layout.activity_surfer); //TODO: needs to be splashpage
         FrameLayout frame = new FrameLayout(this);
 
-        /*
+
         //TODO: Create splashPage Fragment && add Eventbus to Manifest file
         //      incorporate into the Splashfragment then subscribe to when
         //      the splash pages finishes; upon finish, do a fragment transaction
@@ -35,7 +35,7 @@ public class SurferActivity extends ActionBarActivity {
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.add(android.R.id.content, splashFrag).commit();
         }
-        */
+
 
     }
 

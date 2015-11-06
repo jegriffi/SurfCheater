@@ -7,8 +7,8 @@ import java.util.HashMap;
  */
 public final class Cache {
 
-    private static HashMap<String, Object> forecastCacheMap;
-    private static HashMap<String, Object> currentCacheMap;
+    private static HashMap<String, ForecastSurfInfo> forecastCacheMap;
+    private static HashMap<String, CurrentSurfInfo> currentCacheMap;
     private static Cache mInstance = null;
 
     public static synchronized Cache instance() {
@@ -16,8 +16,8 @@ public final class Cache {
             return mInstance;
         }
         mInstance = new Cache();
-        forecastCacheMap = new HashMap<String, Object>();
-        currentCacheMap = new HashMap<String, Object>();
+        forecastCacheMap = new HashMap<>();
+        currentCacheMap = new HashMap<>();
         return mInstance;
     }
 
@@ -43,5 +43,13 @@ public final class Cache {
 
     public synchronized void removeCurrent(final String key) {
         currentCacheMap.remove(key);
+    }
+
+    public synchronized HashMap<String, ForecastSurfInfo> getForecastCacheMap() {
+        return forecastCacheMap;
+    }
+
+    public synchronized HashMap<String, CurrentSurfInfo> getCurrentCacheMap() {
+        return currentCacheMap;
     }
 }

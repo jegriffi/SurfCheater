@@ -4,7 +4,7 @@ import android.content.Context;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
+import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -40,16 +40,12 @@ public class DashboardFragment extends Fragment {
     private ForecastSurfInfo mForecastSurfInfo;
     private List<ForecastSurfInfo> mForecastSurfInfos;
 
-    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-        mCache = Cache.instance();
-//        mCurrentSurfInfo = mCache.getCurrent();
-//        mForecastSurfInfo = mCache.getForecast();
-    }
-
     @Override
     public void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        mCache = Cache.instance();
+//        mCurrentSurfInfo = mCache.getCurrent();
+//        mForecastSurfInfo = mCache.getForecast();
         setHasOptionsMenu(true);
     }
 
