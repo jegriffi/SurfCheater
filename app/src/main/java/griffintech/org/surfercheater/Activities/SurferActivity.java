@@ -35,8 +35,6 @@ public class SurferActivity extends ActionBarActivity {
             FragmentTransaction ft = getFragmentManager().beginTransaction();
             ft.add(android.R.id.content, splashFrag).commit();
         }
-
-
     }
 
     @Override

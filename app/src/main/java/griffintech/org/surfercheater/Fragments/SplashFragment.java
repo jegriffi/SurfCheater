@@ -1,13 +1,13 @@
 package griffintech.org.surfercheater.Fragments;
 
 import android.app.Fragment;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-import java.util.HashMap;
+import android.widget.ImageView;
 
 import griffintech.org.surfercheater.R;
 import griffintech.org.surfercheater.Utils.Cache;
@@ -29,13 +29,20 @@ public class SplashFragment extends Fragment {
         }
     }
 
-//    @Override
-//    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-//        super.onCreateView(inflater, container, savedInstanceState);
-//
-//        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.fragment_splash, container, false);
-//        return rootView;
-//    }
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        super.onCreateView(inflater, container, savedInstanceState);
+
+        ViewGroup rootView = (ViewGroup) inflater.inflate(R.layout.layout_splash, container, false);
+        ImageView waveView = (ImageView) rootView.findViewById(R.id.surfAnimation);
+        waveView.setBackgroundResource(R.drawable.animation);
+        AnimationDrawable waveAnimation = (AnimationDrawable) waveView.getBackground();
+        waveAnimation.start();
+
+        //TODO: maybe start thread timer? to just wait 5 seconds and then do a fragment transaction to dashboard
+
+        return rootView;
+    }
 
     @Override
     public void onResume() {

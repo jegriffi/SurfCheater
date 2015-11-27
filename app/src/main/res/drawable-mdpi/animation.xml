@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    
+    <item 
+        android:drawable="@drawable/loadingwave0"
+        android:duration="30" />    
+        
+    <item 
+        android:drawable="@drawable/loadingwave1"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave2"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave3"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave4"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave5"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave6"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave7"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave8"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave9"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave10"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave11"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave12"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave13"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave14"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave15"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave16"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave17"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave18"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave19"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave20"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave21"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave22"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave23"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave24"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave25"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave26"
+        android:duration="30" />
+    
+    <item
+        android:drawable="@drawable/loadingwave27"
+        android:duration="500" />    
+
+</animation-list>
