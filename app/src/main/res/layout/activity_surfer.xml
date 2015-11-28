@@ -1,9 +1,14 @@
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SurferActivity">
+    <fragment
+        android:name="griffintech.org.surfercheater.Fragments.SplashFragment"
+        android:id="@+id/splashFrag"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        tools:layout="@layout/layout_splash"/>
 
-
-</RelativeLayout>
+</LinearLayout>

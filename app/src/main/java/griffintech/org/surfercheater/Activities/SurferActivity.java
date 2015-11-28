@@ -13,14 +13,12 @@ import griffintech.org.surfercheater.Fragments.DashboardFragment;
 import griffintech.org.surfercheater.R;
 
 public class SurferActivity extends ActionBarActivity {
-    //Fragment splashFrag = new SplashFragment();
-    Fragment dashboardFrag = new DashboardFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_surfer); //TODO: needs to be splashpage
-        FrameLayout frame = new FrameLayout(this);
+        setContentView(R.layout.activity_surfer);
+        //FrameLayout frame = new FrameLayout(this);
 
 
         //TODO: Create splashPage Fragment && add Eventbus to Manifest file
@@ -28,13 +26,13 @@ public class SurferActivity extends ActionBarActivity {
         //      the splash pages finishes; upon finish, do a fragment transaction
         //      to the new fragment(DashboardFragment)
         //frame.setId();
-        setContentView(frame, new LayoutParams(LayoutParams.MATCH_PARENT,
-                LayoutParams.MATCH_PARENT));
-        if (savedInstanceState == null) {
-            Fragment splashFrag = new Fragment();
-            FragmentTransaction ft = getFragmentManager().beginTransaction();
-            ft.add(android.R.id.content, splashFrag).commit();
-        }
+//        setContentView(frame, new LayoutParams(LayoutParams.MATCH_PARENT,
+//                LayoutParams.MATCH_PARENT));
+//        if (savedInstanceState == null) {
+//            Fragment splashFrag = new Fragment();
+//            FragmentTransaction ft = getFragmentManager().beginTransaction();
+//            ft.add(android.R.id.content, splashFrag).commit();
+//        }
     }
 
     @Override

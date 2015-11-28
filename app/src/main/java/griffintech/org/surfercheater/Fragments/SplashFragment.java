@@ -1,6 +1,7 @@
 package griffintech.org.surfercheater.Fragments;
 
 import android.app.Fragment;
+import android.app.FragmentTransaction;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -24,9 +25,9 @@ public class SplashFragment extends Fragment {
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mCache = Cache.instance();
-        if (savedInstanceState == null) {
-            // add user specific data (maybe previous location(?) or most recent spot visited (?))
-        }
+//        if (savedInstanceState == null) {
+//            // add user specific data (maybe previous location(?) or most recent spot visited (?))
+//        }
     }
 
     @Override
@@ -39,8 +40,21 @@ public class SplashFragment extends Fragment {
         AnimationDrawable waveAnimation = (AnimationDrawable) waveView.getBackground();
         waveAnimation.start();
 
-        //TODO: maybe start thread timer? to just wait 5 seconds and then do a fragment transaction to dashboard
-
+        Thread timer = new Thread() {
+            public void run() {
+                try {
+                    sleep(5000);
+                } catch(InterruptedException e) {
+                    e.printStackTrace();
+                } finally {
+                    DashboardFragment dashFrag = new DashboardFragment();
+                    FragmentTransaction trans = getFragmentManager().beginTransaction();
+                    trans.replace(R.id.splashFrag, dashFrag);
+                    trans.commit();
+                }
+            }
+        };
+        timer.start();
         return rootView;
     }
 
